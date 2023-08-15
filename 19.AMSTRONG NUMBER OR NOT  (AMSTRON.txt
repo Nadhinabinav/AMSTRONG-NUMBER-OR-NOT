@@ -1,0 +1,43 @@
+19.AMSTRONG NUMBER OR NOT  //(AMSTRONG NUMBERS ARE 153,370,371,407)
+
+CODE:
+
+#include <stdio.h>
+void main() {
+    int n,r,sum=0,n1;
+    printf("ENTER A NUMBER: ");
+    scanf("%d",&n);
+    n1=n;
+    while(n>0){
+        r=n%10;
+        sum=sum+(r*r*r);
+        n=n/10;
+    }
+    if(n1==sum){
+        printf("THE GIVEN NUMBER IS AMSTRONG NUMBER");
+    }
+    else{
+        printf("THE GIVEN NUMBER IS NOT A AMSTRONG NUMBER ");
+    }
+}
+
+
+OUTPUT:1
+
+ENTER A NUMBER: 654
+THE GIVEN NUMBER IS NOT A AMSTRONG NUMBER 
+
+OUTPUT:2
+
+ENTER A NUMBER: 407
+THE GIVEN NUMBER IS AMSTRONG NUMBER
+
+OUTPUT:3
+ENTER A NUMBER: 153
+THE GIVEN NUMBER IS AMSTRONG NUMBER
+
+OUTPUT:4
+
+ENTER A NUMBER: 500
+THE GIVEN NUMBER IS NOT A AMSTRONG NUMBER
+
